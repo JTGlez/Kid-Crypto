@@ -1,4 +1,5 @@
 # Algoritmo Kid Krypto.
+import fileinput as fp
 
 def setup(a, b, A, B):
     m = (a * b) - 1
@@ -19,8 +20,6 @@ def decrypt(ciphertext, private_key, public_key):
     yd = ciphertext * d
     x = yd % n
     return x
-
-import fileinput as fp
 
 #Recuperando las entradas en una lista.
 inputs = []
