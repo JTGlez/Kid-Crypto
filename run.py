@@ -32,7 +32,7 @@ a = int(inputs[1])
 b = int(inputs[2])
 aM = int(inputs[3])
 bM = int(inputs[4])
-plaintext = inputs[5]
+plaintext = int(inputs[5])
 
 n, e, d = setup(a, b, aM, bM)
 public_key = (n, e)
