@@ -39,19 +39,10 @@ n, e, d = setup(a, b, aM, bM)
 public_key = (n, e)
 private_key = d
 
-ciphertext = encrypt(plaintext, public_key)
-decrypted_plaintext = decrypt(ciphertext, private_key, public_key)
-
-print(f"Plaintext: {plaintext}")
-print(f"Ciphertext: {ciphertext}")
-print(f"Decrypted plaintext: {decrypted_plaintext}")
-
 
 if (mode == 'E'):
     ciphertext = encrypt(plaintext, public_key)
     print(ciphertext)
 else:
-    decrypted_plaintext = decrypt(ciphertext, private_key, public_key)
+    decrypted_plaintext = decrypt(plaintext, private_key, public_key)
     print(decrypted_plaintext)
-
-    
