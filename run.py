@@ -28,10 +28,10 @@ for entrada in fp.input():
     inputs.append(entrada.strip())
 
 mode = inputs[0]
-a = inputs[1]
-b = inputs[2]
-aM = inputs[3]
-bM = inputs[4]
+a = int(inputs[1])
+b = int(inputs[2])
+aM = int(inputs[3])
+bM = int(inputs[4])
 plaintext = inputs[5]
 
 n, e, d = setup(a, b, aM, bM)
